@@ -31,6 +31,8 @@ jobs:
           echo "Good"
           echo "Morning"
 
+      # $ 기호는 이변수 이름표를 떼고 그 안에 들어있는 실제값으로 바꿔줘라는 뜻
+      # echo $GITHUB_SHA : 이 변수안에 든 값을 출력해라. 7b3f1c...(실제 커밋 해시)
       - name: Github Actions 자체에 저장되어 있는 변수 사용해보기=
         run: |
           echo $GITHUB_SHA
